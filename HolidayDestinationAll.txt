@@ -1,0 +1,124 @@
+    sn             Destinations       Continents  FeedbkScore  \
+0    1               Antarctica        Antartica            5   
+1    2                Argentina    South America            6   
+2    3                Australia          Oceania            7   
+3    4                   Brazil    South America            8   
+4    5                   Canada    North America            9   
+5    6           Czech Republic           Europe            5   
+6    7                    Egypt           Africa            6   
+7    8                    Ghana           Africa            7   
+8    9                  Nigeria           Africa            8   
+9   10                 Pakistan             Asia            9   
+10  11         Papua New Guinea          Oceania            5   
+11  12             Saudi Arabia             Asia            6   
+12  13                   Turkey  Europe and Asia            7   
+13  14           United Kingdom           Europe            8   
+14  15  United State of America    North America            9   
+
+    AvgHotelStarRatin  InclusiveHotelNo      MostVisitedCity  
+0                   3                 9  Villa Las Estrellas  
+1                   4                 8         Buenos Aires  
+2                   5                 7               Sydney  
+3                   3                 6       Rio de Janeiro  
+4                   4                 5              Toronto  
+5                   5                 9               Prague  
+6                   3                 8                Cairo  
+7                   4                 7                Accra  
+8                   5                 6                Lagos  
+9                   3                 5               Lahore  
+10                  4                 9         Port Moresby  
+11                  5                 8               Riyadh  
+12                  3                 7             Istanbul  
+13                  4                 6               London  
+14                  5                 5             New York  
+
+
+ No of Rows in Holiday Destination Data    = 15
+
+
+ No of Columns in Holiday Destination Data = 7
+
+
+ Output of Printing row 3 - 8 Using iloc 
+   Unnamed: 0  sn    Destinations     Continents  FeedbkScore  \
+3           3   4          Brazil  South America            8   
+4           4   5          Canada  North America            9   
+5           5   6  Czech Republic         Europe            5   
+6           6   7           Egypt         Africa            6   
+7           7   8           Ghana         Africa            7   
+
+   AvgHotelStarRatin  InclusiveHotelNo MostVisitedCity  
+3                  3                 6  Rio de Janeiro  
+4                  4                 5         Toronto  
+5                  5                 9          Prague  
+6                  3                 8           Cairo  
+7                  4                 7           Accra  
+
+
+ Output of Printing row 3 - 8 Using loc 
+                Unnamed: 0  sn     Continents  FeedbkScore  AvgHotelStarRatin  \
+Destinations                                                                    
+Brazil                   3   4  South America            8                  3   
+Canada                   4   5  North America            9                  4   
+Czech Republic           5   6         Europe            5                  5   
+Egypt                    6   7         Africa            6                  3   
+Ghana                    7   8         Africa            7                  4   
+
+                InclusiveHotelNo MostVisitedCity  
+Destinations                                      
+Brazil                         6  Rio de Janeiro  
+Canada                         5         Toronto  
+Czech Republic                 9          Prague  
+Egypt                          8           Cairo  
+Ghana                          7           Accra  
+
+
+ Mean Number of all-inclusive hotels across all destinations = 7.0
+
+
+ Maximum Feedback Scoring Destination =  9
+
+
+ Minimum Feedback Scoring Destination =  5
+
+
+ The destinations where there are more than 8 all-inclusive hotels are  
+    Unnamed: 0  sn      Destinations Continents  FeedbkScore  \
+0            0   1        Antarctica  Antartica            5   
+5            5   6    Czech Republic     Europe            5   
+10          10  11  Papua New Guinea    Oceania            5   
+
+    AvgHotelStarRatin  InclusiveHotelNo      MostVisitedCity  
+0                   3                 9  Villa Las Estrellas  
+5                   5                 9               Prague  
+10                  4                 9         Port Moresby  
+
+
+ Data Filtered by Score above 8 are  
+    Unnamed: 0  sn             Destinations     Continents  FeedbkScore  \
+4            4   5                   Canada  North America            9   
+9            9  10                 Pakistan           Asia            9   
+14          14  15  United State of America  North America            9   
+
+    AvgHotelStarRatin  InclusiveHotelNo MostVisitedCity  
+4                   4                 5         Toronto  
+9                   3                 5          Lahore  
+14                  5                 5        New York  
+
+
+ Data Filtered by Score below 6 are  
+    Unnamed: 0  sn      Destinations Continents  FeedbkScore  \
+0            0   1        Antarctica  Antartica            5   
+5            5   6    Czech Republic     Europe            5   
+10          10  11  Papua New Guinea    Oceania            5   
+
+    AvgHotelStarRatin  InclusiveHotelNo      MostVisitedCity  
+0                   3                 9  Villa Las Estrellas  
+5                   5                 9               Prague  
+10                  4                 9         Port Moresby  
+
+
+ Correlation between number of inclusive hotels and Feedback Score  =  
+-0.9999999999999999
+
+There is correlation between Inclusive Hotel Number and Feedback Score but not a perfect one
